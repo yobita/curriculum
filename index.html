@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UFT-8" />
-  <meta http-equiv="X-UA-Compatible"
-  content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> CURRICULUM VITAE</title>
-  <link rel="stylesheet" href="css/style.css"/>  
-  <img src="assets/img/fotoperfil.jpg" alt="Foto perfil" height="200px"/>
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
-    <h1>CURRICULUM VITAE</h1>  
+<body>
+  <header class="text-center bg-light py-3">
+    <img src="assets/img/fotoperfil.jpg" alt="Foto perfil" class="profile-pic rounded-circle mb-3">
+    <h1>Curriculum Vitae</h1>
     <h2>Yobanka Cortes Esquivel</h2>
-    <a href="https://yobita.github.io/">Github page</a>
-<!--barra navegacion-->
-
-      <header>
-          <nav>
-          <ul>
-          <li><a href=#Educacións>Educación</a></li>
-          <li><a href=#Habilidades>Habilidades</a></li>
-          <li><a href=#Experiencia>Experiencia laboral</a></li>
-          </ul>
-          </nav>
-          </header>
-          <main>
-          <h2 id=Educación></h2>
-          <h2 id=Habilidades></h2>
-          <h2 id=Experiencia></h2>
-          </main>
-  
+    <a href="https://yobita.github.io/" class="github-link d-block mb-2">Github page</a>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia laboral</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container my-4">
+    <section id="educacion">
       <h3>Educación</h3>
       <ul>
         <li>Universidad Andres Bello</li>
         <li>IACC</li>
         <li>Instituto cultural Chino</li>
         <li>Desafío LATAM</li>
-        <a href="./portafolio.html">Ver mis trabajos</a>
-  
       </ul>
-      </header>
-
-    <h3>Habilidades</h3>
-    <ul>
-      <li class="skills">Inglés-Avanzado</li>
-      <li>Chino mandarin básico</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Git y Github</li>
-      <li>Ofimática</li>
-    </ul>
-    <h3>Experiencia laboral</h3>
-    <a href="https://www.linkedin.com/in/yobanka-cortes-esquivel-48306395/">Linkedin</a>
-    <ol>
-      <li>
-        <h3>Movistar</h3>
-      <h4>Ejecutiva de sucursal</h4> 
-      <p>Ejecutiva polifuncional en la sucursal movistar de la comuna de ÑUÑOA</p>
-      </li>
-      <li>
-        <h3>Sidonia</h3>
-        <h4>Ejecutiva comercial</h4>
-        <p>Ejecutiva de ventas de insumos agricolas B2B y B2C</p>  
-      </li>
-      <li>
-        <h3>Tanner</h3>
-        <h4>Ejecutiva de negocios</h4>
-        <p>Gestion de primer negocio de factoring de nuevos clientes</p>
-      </li>
-      <li>
-        <h3>Evolutio</h3>
-        <h4>Ejecutiva de gestion y soporte</h4>
-        <p>Encargada de gestión de inicios de actividades de empresas y soporte de trámites en SII</p>
-      </li>
-    </ol>
-
-    <footer class="bg-dark text-center text-light p-4">
-      <p class="mb-0">Yobanka Cortes 2024. Todos los derechos reservados.</p>
+      <a href="./portafolio.html" class="portfolio-link">Ver mis trabajos</a>
+    </section>
+    <section id="habilidades">
+      <h3>Habilidades</h3>
+      <ul>
+        <li>Inglés - Avanzado</li>
+        <li>Chino mandarín básico</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git y Github</li>
+        <li>Ofimática</li>
+      </ul>
+    </section>
+    <section id="experiencia">
+      <h3>Experiencia laboral</h3>
+      <a href="https://www.linkedin.com/in/yobanka-cortes-esquivel-48306395/" class="linkedin-link">Linkedin</a>
+      <ol>
+        <li>
+          <h4>Movistar</h4>
+          <h5>Ejecutiva de sucursal</h5>
+          <p>Ejecutiva polifuncional en la sucursal movistar de la comuna de ÑUÑOA</p>
+        </li>
+        <li>
+          <h4>Sidonia</h4>
+          <h5>Ejecutiva comercial</h5>
+          <p>Ejecutiva de ventas de insumos agrícolas B2B y B2C</p>
+        </li>
+        <li>
+          <h4>Tanner</h4>
+          <h5>Ejecutiva de negocios</h5>
+          <p>Gestión de primer negocio de factoring de nuevos clientes</p>
+        </li>
+        <li>
+          <h4>Evolutio</h4>
+          <h5>Ejecutiva de gestión y soporte</h5>
+          <p>Encargada de gestión de inicios de actividades de empresas y soporte de trámites en SII</p>
+        </li>
+      </ol>
+    </section>
+    <section id="portafolio">
+      <h3>Portafolio</h3>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <a href="#" class="d-block mb-4"><img src="assets/img/proyecto1.jpg" alt="Proyecto 1" class="img-fluid rounded"></a>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#" class="d-block mb-4"><img src="assets/img/proyecto2.jpg" alt="Proyecto 2" class="img-fluid rounded"></a>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#" class="d-block mb-4"><img src="assets/img/proyecto3.jpg" alt="Proyecto 3" class="img-fluid rounded"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center bg-dark text-white py-3">
+    <p>Todos los derechos reservados - Yobanka Cortes 2024.</p>
   </footer>
-
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

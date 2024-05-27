@@ -1,5 +1,125 @@
-body { 
-    background-color: bisque;
-     color: black; 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c9c7c7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #e0f7fa;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+  
+  h1, h2 {
+    margin: 10px 0;
+  }
+  
+  h1 {
+    color: #00796b;
+  }
+  
+  h2 {
+    color: #004d40;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #00796b;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #b2dfdb;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: #00796b;
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  a.github-link, a.linkedin-link, a.portfolio-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: #004d40;
+    text-decoration: none;
+  }
+  
+  a.github-link:hover, a.linkedin-link:hover, a.portfolio-link:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 5px;
     }
-
+  
+    .profile-pic {
+      height: 100px;
+      width: 100px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+  }
+  
